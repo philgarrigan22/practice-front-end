@@ -6,7 +6,7 @@ const BOOKS_ELEM = '#user-message'
 const booksTemplate = require('./templates/button-response.handlebars')
 
 const getBooksSuccess = (responseData) => {
-  const booksHtml = booksTemplate(responseData.books)
+  const booksHtml = booksTemplate({ books: responseData.books })
   $(BOOKS_ELEM).html = booksHtml
 }
 
