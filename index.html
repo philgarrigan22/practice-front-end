@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
       <!-- Do not add `script` tags-->
@@ -12,6 +13,16 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <main class="container">
+        <h1>Team 0 Library</h1>
+        <div class="row">
+          <button class="btn btn-primary get-books col-6" type="button" name="button">Get Books</button>
+          <div class="col-6" id="user-message"></div>
+        </div>
+        <div class="row">
+          <section class="col-12" id="show-books">
+          </section>
+        </div>
+      </main>
     </body>
 </html>
